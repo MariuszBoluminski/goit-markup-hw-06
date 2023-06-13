@@ -436,11 +436,79 @@
             </li>
           </ul>
         </div>
+        <form class="form footer-form">
+          <label class="form-field">
+            <span class="label-title title"> Zapisz się do newslettera </span>
+            <input
+              class="form-input"
+              type="email"
+              name="e-mail"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="footer-btn" type="submit">
+            Zapisz się
+            <svg class="footer-form-icon">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal" autocomplete="off">
+        <h2 class="form-title">Zostaw swoje dane w formularzu poniżej</h2>
+        <label class="modal-form-field">
+          <span class="label-title">Imie</span>
+          <input class="form-input" type="text" name="name" id="name" />
+          <svg class="modal-icon">
+            <use href="./images/symbol-defs.svg#icon-user"></use>
+          </svg>
+        </label>
+
+        <label class="modal-form-field">
+          <span class="label-title">Telefon</span>
+          <input class="form-input" type="tel" name="phone" />
+          <svg class="modal-icon">
+            <use href="./images/symbol-defs.svg#icon-phone"></use>
+          </svg>
+        </label>
+
+        <label class="modal-form-field">
+          <span class="label-title">email</span>
+          <input class="form-input" type="email" name="mail" />
+          <svg class="modal-icon">
+            <use href="./images/symbol-defs.svg#icon-email-envelope"></use>
+          </svg>
+        </label>
+
+        <label class="modal-form-field">
+          <span class="label-title">Komentarz</span>
+          <textarea
+            class="form-textarea"
+            name="comment"
+            rows="6"
+            placeholder="Wprowadź tekst"
+          ></textarea>
+        </label>
+
+        <label class="modal-form-field checkbox-label">
+          <input
+            class="form-checkbox visually-hidden"
+            type="checkbox"
+            name="policy"
+          />
+          <span class="checkbox-icon"></span>
+          <svg class="checked-icon">
+            <use href="./images/symbol-defs.svg#icon-square"></use>
+          </svg>
+          <span class="label-title">Oświadczam iż akceptuję</span>
+          <a class="link" href="">Regulamin i Politykę Prywatności.</a>
+        </label>
+
+        <button class="submit-btn" type="submit">Wyślij</button>
+
         <button type="button" class="modal-btn-close" data-modal-close>
           <svg class="close-black">
             <use
