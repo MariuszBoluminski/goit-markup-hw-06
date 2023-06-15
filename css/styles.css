@@ -611,7 +611,7 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 15px;
 }
@@ -1014,9 +1014,13 @@ ul {
   display: flex;
   flex-direction: column;
   margin-right: 12px;
+  margin-top: 72px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .footer-form .form-input {
+  margin-top: 20px;
   padding: 15px;
   width: 358px;
   background-color: transparent;
@@ -1032,7 +1036,8 @@ ul {
 .footer-form .footer-btn {
   display: inline-flex;
   align-items: center;
-  margin-top: auto;
+  margin-top: 108px;
+  margin-bottom: 94px;
 }
 .footer-btn {
   display: inline-block;
